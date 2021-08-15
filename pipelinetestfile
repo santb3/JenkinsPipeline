@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+          stage('Developement') {
+            steps {
+                echo 'Code Developed'
+            }
+        }
+          stage('Testing') {
+            steps {
+                echo 'Functional Testing in progress'
+            }
+        }
+          stage('Deployment') {
+            steps {
+                echo 'Code deployed to the production'
+            }
+        }
+    }
+}
